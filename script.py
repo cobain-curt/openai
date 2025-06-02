@@ -57,8 +57,7 @@ def ask_openai(user_question: str, knowledge_file: str = "knowledge.txt") -> str
     ]
     
     response = openai.ChatCompletion.create(
-        #model="gpt-4",
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=messages,
         temperature=0.2,
         max_tokens=500  # Ограничиваем длину ответа
